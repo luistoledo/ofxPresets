@@ -69,9 +69,6 @@ public:
 
     ~ofxPresets() {
         stop();
-        if (params) {
-            delete params;
-        }
         if (!interpolationDataMap.empty()) {
             interpolationDataMap.clear();
         }
